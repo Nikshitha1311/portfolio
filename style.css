@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .landing {
+    height: 100vh;
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 1s ease-in;
+  }
+  
+  .landing h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+  }
+  
+  .landing p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .about, .skills, .projects, .contact {
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Animation trigger */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .about .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* For a circular photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about p {
+    flex: 1; /* Ensures text takes up remaining space */
+  }
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
